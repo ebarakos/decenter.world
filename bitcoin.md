@@ -9,13 +9,12 @@ each other to form the **Bitcoin network**. The Bitcoin
 network has its own native currency called the
 lower-case **bitcoin**. There's only ever going to be
 21 million bitcoin, which have started to acquire value,
-because people find the properties that the currency has
-useful. Bitcoin represents a new kind of system, and might
+because people find the currency's properties useful. Bitcoin represents a new kind of system, and might
 come to have rather wide-ranging impact on the world.
 
 Although Bitcoin exists to solve problems for people, and
 it is the beliefs of people that gives bitcoin value, it
-is still fundamentally a system of software. This article
+is still fundamentally a software system. This article
 will for this reason try to explain what the Bitcoin
 software actually **is**, which will help understand why
 many of us find it so interesting, and make it easier to
@@ -29,7 +28,7 @@ and hashing.
 
 * todo: mention lineage of satoshi client -> bitcoin core *
 
-The Bitcoin software is a program written in the C++
+The Bitcoin software is a program written in C++
 programming language, which if you run it makes your
 computer a **Bitcoin node**. In the months and years
 after Satoshi's initial emails, more and more people
@@ -41,7 +40,7 @@ can't be eaten and isn't particularly pretty, but it can
 be exchanged for bread or a ticket to an art gallery
 because other people believe it has value. The bitcoin
 currency, which is listed on exchanges as BTC, is just
-the same. A price really is only an abstracted way of
+the same. A price in reality is nothing more than an abstracted way of
 describing the value of something.
 
 Each Bitcoin node connects to other nodes, and sends
@@ -66,14 +65,13 @@ was the one that originated the transaction.
 
 **Bitcoin wallets** are just software that helps us
 keep track of a collection of private keys,
-as well as how many bitcoin are controlled by those
+as well as how many bitcoins are controlled by those
 keys. The wallets normally use a new address every time
 we receive bitcoin, which helps with privacy. By
 handling the details of managing private keys, summing
 up the bitcoin controlled by those keys, and signing
 transactions, the barrier to entry is lowered by
-using wallets compared to if we needed to understand
-these concepts ourselves.
+using wallets rathera than manually taking care of these steps.
 
 We can visualize a user Alice's wallet as a bag of
 private keys, some of which might be used to unlock
@@ -118,7 +116,7 @@ If Alice sends 0.25 BTC to Bob, what's going on
 under the hood is that Alice controls private keys
 with unspent transaction outputs or **UTXOs** summing
 to at least 0.25 BTC. She uses these outputs to create a
-new transaction with those outputs as inputs, requiring
+new transaction using them as inputs, requiring
 Bob's signature to spend the new output in the future.
 
 Let's step through a concrete example.
@@ -252,7 +250,7 @@ several valid chains available, our node will follow the
 chain that has the most accumulated work behind it.
 
 The 10 minute rate of block production gives plenty of
-time for the entire network to hear about the latest
+time for the entire network to listen about the latest
 blocks, which is important for miners so they don't waste
 effort trying to mine blocks on the wrong branch of the
 chain. Since every node has a copy of the entire
@@ -276,7 +274,7 @@ mined.
 
 The Bitcoin network is the first of a new type of
 technology with some novel interesting properties, but
-it's not going to solve all the problems in the world.
+it's not going to solve all problems in the world.
 The Bitcoin network on average produces a block every 10
 minutes, which means that at most a handful of
 transactions can be sent every second. Each transaction
@@ -300,8 +298,8 @@ solutions** being built to address both these problems
 like the [Lightning Network](http://lightning.network/),
 but they are not yet deployed to the live Bitcoin network.
 
-Another limitation is that in order to really be certain
-that we are in control of our bitcoin, we would all need
+Another limitation is that in order to be really certain
+that we are in control of our bitcoins, we would all need
 to run our own full nodes, and be very good at protecting
 our private keys, both of which raises the barrier to
 entry.
